@@ -30,4 +30,9 @@ class PagesController extends Controller
     {
         return view('classes');
     }
+
+    public function skills()
+    {
+        return view('skills');
+    }
 }

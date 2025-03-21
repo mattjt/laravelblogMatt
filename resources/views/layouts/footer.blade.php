@@ -26,6 +26,11 @@
                         Classes
                     </a>
                 </li>
+                <li class="pb-1">
+                    <a href="/skills">
+                        Skills
+                    </a>
+                </li>
             </ul>
         </div>
 
@@ -37,7 +42,7 @@
             <ul class="py-4 sm:text-s pt-4 text-gray-400">
                 <li class="pb-1">
                     <a href="/about">
-                        About us
+                        About
                     </a>
                 </li>
                 <li class="pb-1">
@@ -51,30 +56,26 @@
 
         <div>
             <h3 class="text-l sm:font-bold text-gray-100">
-                Latest posts
+                Useful Links
             </h3>
 
             <ul class="py-4 sm:text-s pt-4 text-gray-400">
                 <li class="pb-1">
-                    <a href="/">
-                        Why we love tech
+                    <a href="https://pathofexile2.com/">
+                        Offical Website
                     </a>
                 </li>
                 <li class="pb-1">
-                    <a href="/">
-                        Why we love design
+                    <a href="https://poe2db.tw">
+                        Database
                     </a>
                 </li>
                 <li class="pb-1">
-                    <a href="/">
-                        Why to use Laravel
+                    <a href="https://www.pathofexile.com/trade2">
+                        Trade Site
                     </a>
                 </li>
-                <li class="pb-1">
-                    <a href="/">
-                        Why PHP is the best
-                    </a>
-                </li>
+                
             </ul>
         </div>
     </div>
