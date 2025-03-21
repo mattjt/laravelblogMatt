@@ -21,18 +21,18 @@
                 Classes
             </h2>
             
-            <p class="py-8 text-gray-500 text-s">
-                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus.
+            <p class="py-8 text-gray-500 text-s italic">
+                Path of Exile 2 offers 12 distinct classes, each tailored to unique playstyles based on Strength, Dexterity, and Intelligence.
             </p>
 
-            <p class="font-extrabold text-gray-600 text-s pb-9">
-                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sapiente magnam vero nostrum! Perferendis eos molestias porro vero. Vel alias.
+            <p class="text-gray-600 text-s pb-9">
+                The game features a diverse set of character classes, each designed around different combat approaches and attribute specializations. These include melee fighters like the Warrior, ranged attackers such as the Ranger, and spellcasters like the Sorceress and Witch. Hybrid classes like the Druid, Huntress, and Monk allow for versatile gameplay. Each class starts at a different position on the Passive Skill Tree, influencing their early strengths and progression paths. As players level up, they can further refine their class through Ascendancy Classes, unlocking powerful, class-specific enhancements.
             </p>
 
             <a 
-                href="/blog"
-                class="uppercase bg-blue-500 text-gray-100 text-s font-extrabold py-3 px-8 rounded-3xl">
-                Find Out More
+                href="/classes"
+                class="uppercase bg-red-500 text-gray-100 text-s font-extrabold py-3 px-6 rounded-2xl">
+                Classes Page
             </a>
         </div>
     </div>
@@ -45,18 +45,18 @@
                 Skill Tree
             </h2>
             
-            <p class="py-8 text-gray-500 text-s">
-                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus.
+            <p class="py-8 text-gray-500 text-s italic">
+                The Passive Skill Tree is a vast web of over 1,500 nodes, allowing deep character customization and specialization.
             </p>
 
-            <p class="font-extrabold text-gray-600 text-s pb-9">
-                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sapiente magnam vero nostrum! Perferendis eos molestias porro vero. Vel alias.
+            <p class="text-gray-600 text-s pb-9">
+                Every character has access to the Passive Skill Tree, a massive interconnected grid of stat and ability enhancements. Each class starts in a specific area of the tree, but players can progress in any direction, tailoring their build to suit their playstyle. A major innovation in Path of Exile 2 is Dual Specialization, which allows players to create different passive setups that activate based on the weapons or abilities being used. This feature enables dynamic playstyles, encouraging hybrid builds that can adapt to different combat situations.
             </p>
 
             <a 
-                href="/blog"
-                class="uppercase bg-blue-500 text-gray-100 text-s font-extrabold py-3 px-8 rounded-3xl">
-                Find Out More
+                href="/skilltree"
+                class="uppercase bg-red-500 text-gray-100 text-s font-extrabold py-3 px-6 rounded-2xl">
+                Skill Tree Page
             </a>
         </div>
 
@@ -75,18 +75,18 @@
                 Skill Gems
             </h2>
             
-            <p class="py-8 text-gray-500 text-s">
-                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus.
+            <p class="py-8 text-gray-500 text-s italic">
+                Skills in Path of Exile 2 are itemized as Skill Gems, allowing players to fully customize their character’s abilities.
             </p>
 
-            <p class="font-extrabold text-gray-600 text-s pb-9">
-                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sapiente magnam vero nostrum! Perferendis eos molestias porro vero. Vel alias.
+            <p class="text-gray-600 text-s pb-9">
+                Unlike traditional RPGs where characters learn skills directly, Path of Exile 2 uses Skill Gems, which must be socketed into equipment to grant abilities. Players start with Uncut Gems, which can be crafted into various skills, enabling immense flexibility. Each Skill Gem has up to five support sockets, where Support Gems can be added to modify its effects, such as increasing area damage, adding elemental effects, or reducing mana cost. This system encourages deep experimentation and allows for powerful and unique skill combinations.
             </p>
 
             <a 
-                href="/blog"
-                class="uppercase bg-blue-500 text-gray-100 text-s font-extrabold py-3 px-8 rounded-3xl">
-                Find Out More
+                href="/skills"
+                class="uppercase bg-red-500 text-gray-100 text-s font-extrabold py-3 px-6 rounded-2xl">
+                Skill Gem Page
             </a>
         </div>
 
