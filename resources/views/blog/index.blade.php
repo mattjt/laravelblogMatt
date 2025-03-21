@@ -1,11 +1,14 @@
 @extends('layouts.app')
 
 @section('content')
-<div class="w-4/5 m-auto text-center">
-    <div class="py-15 border-b border-gray-200">
-        <h1 class="text-6xl">
-            Blog Posts
+<div class=" m-auto text-center bg-gray-800">
+    <div class="py-15 border-b border-gray-700">
+        <h1 class="text-5xl font-bold text-white">
+            News Posts
         </h1>
+        <p class="text-gray-300 text-lg mt-4">
+            Read the lastest news and updates from Path of Exile 2.
+        </p>
     </div>
 </div>
 
@@ -28,20 +31,20 @@
 @endif
 
 @foreach ($posts as $post)
-    <div class="sm:grid grid-cols-2 gap-20 w-4/5 mx-auto py-15 border-b border-gray-200">
+    <div class="sm:grid grid-cols-2 gap-20 w-4/5 mx-auto py-15 border-b border-gray-700">
         <div>
             <img src="{{ asset('images/' . $post->image_path) }}" alt="">
         </div>
         <div>
-            <h2 class="text-gray-700 font-bold text-5xl pb-4">
+            <h2 class="text-gray-300 font-bold text-5xl pb-4">
                 {{ $post->title }}
             </h2>
 
             <span class="text-gray-500">
-                By <span class="font-bold italic text-gray-800">{{ $post->user->name }}</span>, Created on {{ date('jS M Y', strtotime($post->updated_at)) }}
+                By <span class="font-bold italic text-gray-100">{{ $post->user->name }}</span>, Created on {{ date('jS M Y', strtotime($post->updated_at)) }}
             </span>
 
-            <p class="text-xl text-gray-700 pt-8 pb-10 leading-8 font-light">
+            <p class="text-xl text-gray-300 pt-8 pb-10 leading-8 font-light">
                 {{ $post->description }}
             </p>
 
@@ -53,7 +56,7 @@
                 <span class="float-right">
                     <a 
                         href="/blog/{{ $post->slug }}/edit"
-                        class="text-gray-700 italic hover:text-gray-900 pb-1 border-b-2">
+                        class="text-gray-300 italic hover:text-gray-100 pb-1 border-b-2">
                         Edit
                     </a>
                 </span>

@@ -1,10 +1,10 @@
 @extends('layouts.app')
 
 @section('content')
-    <div class="bg-gray-100 py-20">
+    <div class="bg-gray-800 py-15">
         <div class="w-4/5 m-auto text-center">
-            <h1 class="text-5xl font-bold text-gray-800">Contact Us</h1>
-            <p class="text-gray-600 text-lg mt-4">
+            <h1 class="text-5xl font-bold text-white">Contact Us</h1>
+            <p class="text-gray-300 text-lg mt-4">
                 Get in touch with us for any inquiries, collaborations, or support.
             </p>
         </div>
@@ -15,8 +15,8 @@
             <img src="https://cdn.pixabay.com/photo/2016/11/21/12/49/phone-1845636_960_720.jpg" alt="Contact Image" class="rounded-lg shadow-lg">
         </div>
         <div class="flex flex-col justify-center">
-            <h2 class="text-3xl font-extrabold text-gray-800">Reach Out to Us</h2>
-            <p class="text-gray-600 text-lg py-4">
+            <h2 class="text-3xl font-extrabold text-white">Reach Out to Us</h2>
+            <p class="text-gray-300 text-lg py-4">
                 Have a question? Fill out the form below or reach us via email and phone.
             </p>
             <form action="/contact" method="POST" class="bg-white p-6 rounded-lg shadow-md">

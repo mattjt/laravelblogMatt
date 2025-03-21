@@ -31,3 +31,6 @@ Route::get('/about', [PagesController::class, 'about'])->name('about');
 
 Route::get('/contact', [PagesController::class, 'contact'])->name('contact');
 
+Route::get('/skilltree', [PagesController::class, 'skilltree'])->name('skilltree');
+Route::get('/classes', [PagesController::class, 'classes'])->name('classes');
+
