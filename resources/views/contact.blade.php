@@ -12,11 +12,11 @@
 
     <div class="w-4/5 m-auto sm:grid grid-cols-2 gap-10 py-10">
         <div>
-            <img src="https://cdn.pixabay.com/photo/2016/11/21/12/49/phone-1845636_960_720.jpg" alt="Contact Image" class="rounded-lg shadow-lg">
+            <img src="\images\contactus.jpg" alt="Contact Image" class="rounded-lg shadow-lg">
         </div>
         <div class="flex flex-col justify-center">
-            <h2 class="text-3xl font-extrabold text-white">Reach Out to Us</h2>
-            <p class="text-gray-300 text-lg py-4">
+            <h2 class="text-3xl font-extrabold">Reach Out to Us</h2>
+            <p class="text-gray-800 text-lg py-4">
                 Have a question? Fill out the form below or reach us via email and phone.
             </p>
             <form action="/contact" method="POST" class="bg-white p-6 rounded-lg shadow-md">
@@ -33,15 +33,15 @@
                     <label class="block text-gray-700 text-sm font-bold mb-2">Message</label>
                     <textarea name="message" rows="4" class="w-full p-3 border border-gray-300 rounded-lg"></textarea>
                 </div>
-                <button type="submit" class="bg-blue-500 text-white font-bold py-3 px-6 rounded-lg shadow-lg hover:bg-blue-600 transition">Send Message</button>
+                <button type="submit" class="bg-red-500 text-white font-bold py-3 px-6 rounded-lg shadow-lg hover:bg-red-700 transition">Send Message</button>
             </form>
         </div>
     </div>
 
-    <div class="bg-blue-500 text-white py-20 text-center">
+    <div class="bg-gray-500 text-white py-20 text-center">
         <h2 class="text-3xl font-bold">Our Contact Information</h2>
         <p class="w-3/5 m-auto text-lg mt-4">
-            Email: contact@yourcompany.com | Phone: +123 456 7890 | Address: 123 Street, City, Country
+            Email: mattjpt@gmail.com | Phone: +123 456 7890 | Address: 123 dundalk, louth, Ireland
         </p>
     </div>
 @endsection
