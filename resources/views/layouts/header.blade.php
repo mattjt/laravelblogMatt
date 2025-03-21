@@ -6,20 +6,19 @@
             </a>
         </div>
         <nav class="text-white text-sm sm:text-base flex items-stretch h-full">
-            
-            
             <a class="no-underline px-2 flex items-center h-full" href="/blog">News</a>
             
-            <a class="no-underline px-2 flex items-center h-full" href="/skilltree">Skill Tree</a>
-            
-            <a class="no-underline px-2 flex items-center h-full" href="/classes">Classes</a>
-
-            <a class="no-underline px-2 flex items-center h-full" href="/skills">Skills</a>
+            <div class="relative group">
+                <a class="no-underline px-2 flex items-center h-full cursor-pointer" href="#">Gameplay</a>
+                <div class="absolute hidden group-hover:block bg-red-900 text-white text-sm sm:text-base mt-2 z-10 p-4 rounded-lg w-32">
+                    <a class="no-underline px-2 py-1 block whitespace-nowrap" href="/skilltree">Skill Tree</a>
+                    <a class="no-underline px-2 py-1 block" href="/classes">Classes</a>
+                    <a class="no-underline px-2 py-1 block" href="/skills">Skills</a>
+                </div>
+            </div>
             
             <a class="no-underline px-2 flex items-center h-full" href="/about">About</a>
-            
             <a class="no-underline px-2 flex items-center h-full" href="/contact">Contact us</a>
-            
             
             @guest
                 <a class="no-underline px-2 flex items-center h-full" href="{{ route('login') }}">{{ __('Login') }}</a>

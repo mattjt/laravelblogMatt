@@ -36,3 +36,17 @@
 .image-container .absolute {
     position: absolute;
 }
+
+.group:hover .group-hover\:block {
+    display: block;
+}
+
+.group:hover .group-hover\:flex {
+    display: flex;
+}
+
+
+
+.rounded-lg {
+    border-radius: 0.5rem;
+}

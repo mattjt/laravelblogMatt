@@ -57,3 +57,31 @@ document.addEventListener('DOMContentLoaded', () => {
     document.querySelector('button[onclick="zoomOut()"]').addEventListener('click', zoomOut);
     document.querySelector('button[onclick="resetImage()"]').addEventListener('click', resetImage);
 });
+
+document.addEventListener('DOMContentLoaded', function () {
+    const gameplayLink = document.querySelector('.group');
+    const dropdown = document.querySelector('.group-hover\\:block');
+
+    let timeout;
+
+    gameplayLink.addEventListener('mouseenter', function () {
+        clearTimeout(timeout);
+        dropdown.classList.remove('hidden');
+    });
+
+    gameplayLink.addEventListener('mouseleave', function () {
+        timeout = setTimeout(function () {
+            dropdown.classList.add('hidden');
+        }, 250);
+    });
+
+    dropdown.addEventListener('mouseenter', function () {
+        clearTimeout(timeout);
+    });
+
+    dropdown.addEventListener('mouseleave', function () {
+        timeout = setTimeout(function () {
+            dropdown.classList.add('hidden');
+        }, 3000);
+    });
+});
