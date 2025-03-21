@@ -33,9 +33,9 @@
 @foreach ($posts as $post)
     <div class="sm:grid grid-cols-2 gap-20 w-4/5 mx-auto py-15 border-b border-gray-700">
         <div>
-            <img src="{{ asset('images/' . $post->image_path) }}" alt="">
+            <img src="{{ asset('images/' . $post->image_path) }}" alt="" >
         </div>
-        <div>
+        <div class="overflow-hidden max-h-80">
             <h2 class="text-gray-900 font-bold text-5xl pb-4">
                 {{ $post->title }}
             </h2>
@@ -47,12 +47,12 @@
             <p class="text-xl text-gray-800 pt-8 pb-10 leading-8 ">
                 {{ $post->description }}
             </p>
-
+        </div>
+        <div>
             <a href="/blog/{{ $post->slug }}" class="uppercase bg-red-500 text-gray-100 text-lg font-extrabold py-4 px-8 rounded-2xl">
                 Keep Reading
             </a>
             
-
             @if (isset(Auth::user()->id) && Auth::user()->id == $post->user_id)
                 <span class="float-right">
                     <a 
@@ -74,7 +74,6 @@
                             type="submit">
                             Delete
                         </button>
-
                     </form>
                 </span>
             @endif
