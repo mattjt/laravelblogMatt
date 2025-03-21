@@ -21,5 +21,13 @@ class PagesController extends Controller
         return view('contact');
     }
 
-    
+    public function skilltree()
+    {
+        return view('skilltree');
+    }
+
+    public function classes()
+    {
+        return view('classes');
+    }
 }
