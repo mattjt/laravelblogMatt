@@ -23,3 +23,16 @@
     object-fit: cover;
 }
 
+.image-container {
+    display: inline-block;
+    position: relative;
+    cursor: grab;
+}
+.image-container img {
+    display: block;
+    position: absolute;
+    cursor: grab;
+}
+.image-container .absolute {
+    position: absolute;
+}
