@@ -51,6 +51,9 @@
             <a href="/blog/{{ $post->slug }}" class="uppercase bg-blue-500 text-gray-100 text-lg font-extrabold py-4 px-8 rounded-3xl">
                 Keep Reading
             </a>
+            <a href="/skills" class="uppercase bg-blue-500 text-gray-100 text-lg font-extrabold py-4 px-8 rounded-3xl">
+                Skill Gems
+            </a>
 
             @if (isset(Auth::user()->id) && Auth::user()->id == $post->user_id)
                 <span class="float-right">

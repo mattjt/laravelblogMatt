@@ -13,6 +13,8 @@
             <a class="no-underline px-2 flex items-center h-full" href="/skilltree">Skill Tree</a>
             
             <a class="no-underline px-2 flex items-center h-full" href="/classes">Classes</a>
+
+            <a class="no-underline px-2 flex items-center h-full" href="/skills">Skills</a>
             
             <a class="no-underline px-2 flex items-center h-full" href="/about">About</a>
             

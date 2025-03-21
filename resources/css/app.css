@@ -11,10 +11,15 @@
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
-    height: 600px;
+    height: 800px;
 }
 
 .text-shadow-md {
     text-shadow: 2px 2px 0 #000, -2px -2px 0 #000, 2px -2px 0 #000, -2px 2px 0 #000, 2px 2px 0 #000, -2px -2px 0 #000, 2px -2px 0 #000, -2px 2px 0 #000;
+}
+
+.max-height-300 {
+    max-height: 300px;
+    object-fit: cover;
 }
 
