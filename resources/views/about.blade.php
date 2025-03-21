@@ -12,24 +12,24 @@
 
     <div class="w-4/5 m-auto sm:grid grid-cols-2 gap-10 py-10">
         <div>
-            <img src="https://cdn.pixabay.com/photo/2016/11/29/09/32/architecture-1868667_960_720.jpg" alt="About Image" class="rounded-lg shadow-lg">
+            <img src="\images\about.jpg" alt="About Image" class="rounded-lg shadow-lg">
         </div>
         <div class="flex flex-col justify-center">
-            <h2 class="text-3xl font-extrabold text-white">Who We Are</h2>
-            <p class="text-gray-300 text-lg py-4">
-                We are a team of passionate developers and designers committed to delivering high-quality digital solutions.
+            <h2 class="text-3xl font-extrabold ">Who We Are</h2>
+            <p class="text-gray-800text-lg py-4">
+                We are a team of passionate developers and designers committed to delivering high-quality gaming web pages.
             </p>
-            <p class="text-gray-300 text-lg pb-4">
-                Our goal is to make technology accessible and innovative, helping businesses grow and thrive in the digital world.
+            <p class="text-gray-800 text-lg pb-4">
+                Our goal is to make gaming accessible and innovative, helping gamers learn and thrive.
             </p>
-            <a href="/contact" class="bg-blue-500 text-white font-bold py-3 px-6 rounded-lg shadow-lg hover:bg-blue-600 transition">Get in Touch</a>
+            <a href="/contact" class="bg-red-500 text-white font-bold py-3 px-6 rounded-lg shadow-lg hover:bg-red-700 transition">Get in Touch</a>
         </div>
     </div>
 
-    <div class="bg-blue-500 text-white py-20 text-center">
+    <div class="bg-gray-500 text-white py-20 text-center">
         <h2 class="text-3xl font-bold">Our Mission</h2>
         <p class="w-3/5 m-auto text-lg mt-4">
-            To empower individuals and businesses through cutting-edge technology and innovative solutions, ensuring seamless digital experiences for everyone.
+            To empower gamers through cutting-edge web based solutions, ensuring seamless digital experiences for everyone.
         </p>
     </div>
 @endsection
