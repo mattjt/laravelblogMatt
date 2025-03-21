@@ -6,7 +6,7 @@
             </a>
         </div>
         <nav class="text-white text-sm sm:text-base flex items-stretch h-full">
-            <a class="no-underline px-2 flex items-center h-full" href="/">Home</a>
+            
             
             <a class="no-underline px-2 flex items-center h-full" href="/blog">News</a>
             
