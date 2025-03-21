@@ -13,7 +13,7 @@
                 </li>
                 <li class="pb-1">
                     <a href="/blog">
-                        Blog
+                        News
                     </a>
                 </li>
                 <li class="pb-1">

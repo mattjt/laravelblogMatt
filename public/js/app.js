@@ -19260,6 +19260,54 @@ __webpack_require__.r(__webpack_exports__);
 /***/ ((__unused_webpack_module, __unused_webpack_exports, __webpack_require__) => {
 
 __webpack_require__(/*! ./bootstrap */ "./resources/js/bootstrap.js");
+var zoomLevel = 1;
+var isDragging = false;
+var startX, startY, initialX, initialY;
+document.addEventListener('DOMContentLoaded', function () {
+  var image = document.getElementById('skillTreeImage');
+  var container = image.parentElement;
+  function zoomIn() {
+    zoomLevel += 0.1;
+    image.style.transform = "scale(".concat(zoomLevel, ")");
+  }
+  function zoomOut() {
+    zoomLevel -= 0.1;
+    image.style.transform = "scale(".concat(zoomLevel, ")");
+  }
+  function resetImage() {
+    zoomLevel = 1;
+    image.style.transform = "scale(".concat(zoomLevel, ")");
+    image.style.left = '0px';
+    image.style.top = '0px';
+  }
+  container.addEventListener('mousedown', function (e) {
+    isDragging = true;
+    startX = e.clientX;
+    startY = e.clientY;
+    initialX = image.offsetLeft;
+    initialY = image.offsetTop;
+    container.style.cursor = 'grabbing';
+  });
+  container.addEventListener('mousemove', function (e) {
+    if (isDragging) {
+      var dx = e.clientX - startX;
+      var dy = e.clientY - startY;
+      image.style.left = "".concat(initialX + dx, "px");
+      image.style.top = "".concat(initialY + dy, "px");
+    }
+  });
+  container.addEventListener('mouseup', function () {
+    isDragging = false;
+    container.style.cursor = 'grab';
+  });
+  container.addEventListener('mouseleave', function () {
+    isDragging = false;
+    container.style.cursor = 'grab';
+  });
+  document.querySelector('button[onclick="zoomIn()"]').addEventListener('click', zoomIn);
+  document.querySelector('button[onclick="zoomOut()"]').addEventListener('click', zoomOut);
+  document.querySelector('button[onclick="resetImage()"]').addEventListener('click', resetImage);
+});
 
 /***/ }),
 
