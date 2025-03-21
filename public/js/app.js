@@ -19308,6 +19308,28 @@ document.addEventListener('DOMContentLoaded', function () {
   document.querySelector('button[onclick="zoomOut()"]').addEventListener('click', zoomOut);
   document.querySelector('button[onclick="resetImage()"]').addEventListener('click', resetImage);
 });
+document.addEventListener('DOMContentLoaded', function () {
+  var gameplayLink = document.querySelector('.group');
+  var dropdown = document.querySelector('.group-hover\\:block');
+  var timeout;
+  gameplayLink.addEventListener('mouseenter', function () {
+    clearTimeout(timeout);
+    dropdown.classList.remove('hidden');
+  });
+  gameplayLink.addEventListener('mouseleave', function () {
+    timeout = setTimeout(function () {
+      dropdown.classList.add('hidden');
+    }, 250);
+  });
+  dropdown.addEventListener('mouseenter', function () {
+    clearTimeout(timeout);
+  });
+  dropdown.addEventListener('mouseleave', function () {
+    timeout = setTimeout(function () {
+      dropdown.classList.add('hidden');
+    }, 3000);
+  });
+});
 
 /***/ }),
 
