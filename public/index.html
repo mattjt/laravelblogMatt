@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- ...existing code... -->
+</head>
+<body>
+    <!-- ...existing code... -->
+    <a href="#" id="myLink">Click me</a>
+    <script>
+        document.getElementById('myLink').onclick = function(event) {
+            event.preventDefault();
+            var form = document.getElementById('myForm');
+            if (form) {
+                form.submit();
+            } else {
+                console.error('Form not found');
+            }
+        };
+    </script>
+    <!-- ...existing code... -->
+</body>
+</html>
