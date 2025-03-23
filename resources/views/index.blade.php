@@ -4,7 +4,7 @@
     <div class="background-image grid grid-cols-1 m-auto">
         <div class="flex text-gray-100 pt-10">
             <div class="m-auto pt-4 pb-16 sm:m-auto w-4/5 block text-center">
-                <a href="/blog" class="sm:text-red-600 text-5xl uppercase font-bold text-shadow-md pb-14 text-shadow-md">
+                <a href="/blog" class="text-red-600 text-6xl uppercase font-bold text-shadow-md pb-14 text-shadow-md font-custom">
                     Latest Path of Exile 2 News
                 </a>
             </div>

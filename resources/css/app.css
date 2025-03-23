@@ -14,8 +14,31 @@
     height: 800px;
 }
 
+h1,h2,h3,h4,h5,h6,p{
+    font-family: "Nunito Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 900; 
+    font-style: normal;
+    font-variation-settings:
+      "wdth" 100;
+     
+}
+
+p {
+    font-weight: 500; 
+  }
+
+
+
 .text-shadow-md {
-    text-shadow: 2px 2px 0 #000, -2px -2px 0 #000, 2px -2px 0 #000, -2px 2px 0 #000, 2px 2px 0 #000, -2px -2px 0 #000, 2px -2px 0 #000, -2px 2px 0 #000;
+    font-weight: 700; 
+
+    
+    text-shadow:
+     -1px -1px 0 #ffffff,  
+      1px -1px 0 #ffffff,
+      -1px 1px 0 #ffffff,
+       1px 1px 0 #ffffff;
 }
 
 .max-height-300 {
@@ -35,17 +58,23 @@
 }
 .image-container .absolute {
     position: absolute;
+
+
 }
 
-.group:hover .group-hover\:block {
+.group:hover .group-hover
+
+\:block {
     display: block;
+
+
 }
 
-.group:hover .group-hover\:flex {
+.group:hover .group-hover\
+
+:flex {
     display: flex;
 }
-
-
 
 .rounded-lg {
     border-radius: 0.5rem;
