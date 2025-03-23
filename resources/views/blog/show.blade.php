@@ -55,6 +55,13 @@
                 <div class="border-b border-gray-200 py-4 bg-white rounded-lg shadow-lg py-4 px-4">
                     <p class="text-gray-600">{{ $comment->content }}</p>
                     <p class="text-gray-400 text-sm">{{ $comment->user->name }}, {{ date('jS M Y', strtotime($comment->created_at)) }}</p>
+                    @can('delete', $comment)
+                        <form action="{{ route('comments.destroy', $comment->id) }}" method="POST" class="inline">
+                            @csrf
+                            @method('DELETE')
+                            <button type="submit" class="text-red-500">Delete</button>
+                        </form>
+                    @endcan
                 </div>
             @endforeach
         @endif
