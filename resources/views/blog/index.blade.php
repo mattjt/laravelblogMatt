@@ -24,7 +24,7 @@
     <div class="pt-15 w-4/5 m-auto">
         <a 
             href="/blog/create"
-            class="bg-red-500 uppercase bg-transparent text-gray-100 text-xs font-extrabold py-3 px-5 rounded-2xl">
+            class="bg-red-500 uppercase bg-transparent text-gray-100 text-xs font-extrabold py-3 px-5 rounded-2xl hover:bg-red-700 transition">
             Create post
         </a>
     </div>
@@ -49,33 +49,35 @@
             </p>
         </div>
         <div>
-            <a href="/blog/{{ $post->slug }}" class="uppercase bg-red-500 text-gray-100 text-lg font-extrabold py-4 px-8 rounded-2xl">
+            <a href="/blog/{{ $post->slug }}" class="uppercase bg-red-500 text-gray-100 text-lg font-extrabold py-4 px-8 rounded-2xl hover:bg-red-700 transition">
                 Keep Reading
             </a>
             
             @if (isset(Auth::user()->id) && Auth::user()->id == $post->user_id && Auth::user()->is_admin)
-                <span class="float-right">
-                    <a 
-                        href="/blog/{{ $post->slug }}/edit"
-                        class="text-gray-300 italic hover:text-gray-100 pb-1 border-b-2">
-                        Edit
-                    </a>
-                </span>
+                <div class="flex justify-end items-center space-x-2">
+                    <span>
+                        <a 
+                            href="/blog/{{ $post->slug }}/edit"
+                            class="bg-gray-500 text-gray-100 text-lg py-3 px-4 rounded-2xl hover:bg-gray-700 transition">
+                            Edit
+                        </a>
+                    </span>
 
-                <span class="float-right">
-                     <form 
-                        action="/blog/{{ $post->slug }}"
-                        method="POST">
-                        @csrf
-                        @method('delete')
+                    <span>
+                        <form 
+                            action="/blog/{{ $post->slug }}"
+                            method="POST">
+                            @csrf
+                            @method('delete')
 
-                        <button
-                            class="text-red-500 pr-3"
-                            type="submit">
-                            Delete
-                        </button>
-                    </form>
-                </span>
+                            <button
+                                class="bg-red-500 text-gray-100 text-lg py-4 px-4 rounded-2xl hover:bg-red-700 transition"
+                                type="submit">
+                                Delete
+                            </button>
+                        </form>
+                    </span>
+                </div>
             @endif
         </div>
     </div>    
