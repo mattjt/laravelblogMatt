@@ -20,7 +20,7 @@
     </div>
 @endif
 
-@if (Auth::check())
+@if (Auth::check() && Auth::user()->is_admin)
     <div class="pt-15 w-4/5 m-auto">
         <a 
             href="/blog/create"
