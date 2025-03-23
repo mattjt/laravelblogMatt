@@ -30,13 +30,13 @@
         </div>
 
         <div>
-            <img src="\images\gemlinglegionnaire.jpeg" width="700" alt="" class="max-height-300">
+            <img src="\images\gemlinglegionnaire.jpeg" width="700" alt="" class="max-height-300 rounded-lg shadow-2xl">
         </div>
     </div>
 
     <div class="sm:grid grid-cols-2 gap-20 w-4/5 mx-auto py-15 border-b border-gray-200">
         <div>
-            <img src="\images\stormweaver.jpeg" width="700" alt="" class="max-height-300">
+            <img src="\images\stormweaver.jpeg" width="700" alt="" class="max-height-300 rounded-lg shadow-2xl">
         </div>
 
         <div class="m-auto sm:m-auto text-left w-4/5 block">
@@ -77,13 +77,13 @@
         </div>
 
         <div>
-            <img src="images\bloodmage.jpeg" width="700" alt="" class="max-height-300">
+            <img src="images\bloodmage.jpeg" width="700" alt="" class="max-height-300 rounded-lg shadow-2xl">
         </div>
     </div>
 
     <div class="sm:grid grid-cols-2 gap-20 w-4/5 mx-auto py-15 border-b border-gray-200">
         <div>
-            <img src="\images\deadeye.jpeg" width="700" alt="" class="max-height-300">
+            <img src="\images\deadeye.jpeg" width="700" alt="" class="max-height-300 rounded-lg shadow-2xl">
         </div>
 
         <div class="m-auto sm:m-auto text-left w-4/5 block">
@@ -124,13 +124,13 @@
         </div>
 
         <div>
-            <img src="\images\chronomancer.jpeg" width="700" alt="" class="max-height-300">
+            <img src="\images\chronomancer.jpeg" width="700" alt="" class="max-height-300 rounded-lg shadow-2xl">
         </div>
     </div>
 
     <div class="sm:grid grid-cols-2 gap-20 w-4/5 mx-auto py-15 border-b border-gray-200">
         <div>
-            <img src="\images\acolyteofchayula.jpeg" width="700" alt="" class="max-height-300">
+            <img src="\images\acolyteofchayula.jpeg" width="700" alt="" class="max-height-300 rounded-lg shadow-2xl">
         </div>
 
         <div class="m-auto sm:m-auto text-left w-4/5 block">
