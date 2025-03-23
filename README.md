@@ -14,6 +14,7 @@ git clone https://github.com/mattjt/laravelblogMatt.git
 
 composer install
 composer update
+composer install
 
 php artisan cache:clear 
 php artisan config:clear
@@ -43,6 +44,7 @@ Refresh the database migrations (this will drop all existing tables and re-run a
 php artisan migrate:fresh
 ```
 
+Grant yourself Admin
 ```
 Create a user in register
 Edit access level to 1 in phpmyadmin in users so see admin features
