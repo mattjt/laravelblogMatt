@@ -5,6 +5,7 @@ use Illuminate\Http\Request;
 use App\Http\Requests\ContactRequest;
 use App\Models\ContactSubmission;
 use App\Models\ContactFormSubmission;
+use App\Models\User;
 
 class ContactController extends Controller
 {
@@ -19,7 +20,8 @@ class ContactController extends Controller
 
     public function index()
     {
-        $submissions = ContactSubmission::all(); // Corrected class name
-        return view('admin.contact.index', compact('submissions'));
+        $submissions = ContactSubmission::all();
+        $users = User::all();
+        return view('admin.contact.index', compact('submissions', 'users'));
     }
 }
