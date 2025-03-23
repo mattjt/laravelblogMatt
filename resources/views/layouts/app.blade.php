@@ -18,6 +18,8 @@
     
     <!-- Styles -->
     <link href="{{ mix('css/app.css') }}" rel="stylesheet">
+
+    <link rel="icon" type="image/png" href="images/favicon4.png" sizes="32x32" />
 </head>
 <body class="bg-gray-100 h-screen antialiased leading-none font-sans">
     <div id="app">
