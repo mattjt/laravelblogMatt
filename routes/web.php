@@ -34,6 +34,8 @@ Route::post('/contact', [ContactController::class, 'submit'])->name('contact.sub
 
 Route::post('/comments', [CommentController::class, 'store'])->middleware('auth')->name('comments.store');
 
+Route::delete('/comments/{comment}', [CommentController::class, 'destroy'])->name('comments.destroy');
+
 Route::get('/skilltree', [PagesController::class, 'skilltree'])->name('skilltree');
 
 Route::get('/skills', [PagesController::class, 'skills'])->name('skills');
