@@ -44,5 +44,7 @@ Route::get('/classes', [PagesController::class, 'classes'])->name('classes');
 
 Route::middleware(['auth', 'can:view-admin-page'])->group(function () {
     Route::get('/admin/contact', [ContactController::class, 'index'])->name('admin.contact.index');
+    Route::delete('/admin/users/{user}', [App\Http\Controllers\Admin\UserController::class, 'destroy'])->name('admin.users.destroy');
+    Route::patch('/admin/users/{user}/make-admin', [App\Http\Controllers\Admin\UserController::class, 'makeAdmin'])->name('admin.users.makeAdmin');
 });
 

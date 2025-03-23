@@ -1,3 +1,4 @@
+
 public function update(Request $request, $slug)
 {
     $request->validate([
