@@ -32,6 +32,34 @@
     </a>
 </div>
 
+<div class="w-4/5 m-auto pt-20">
+    <h2 class="text-4xl font-bold">Comments</h2>
+    @auth
+    <form action="{{ route('comments.store') }}" method="POST" class="pt-10">
+        @csrf
+        <input type="hidden" name="post_id" value="{{ $post->id }}">
+        <textarea name="comment" rows="5" class="w-full rounded-lg shadow-lg p-4" placeholder="Add a comment"></textarea>
+        <button type="submit" class="mt-4 bg-blue-500 text-gray-100 text-lg font-extrabold py-2 px-4 rounded-3xl">
+            Submit
+        </button>
+    </form>
+    @else
+    <p class="text-gray-600">You must be <a href="{{ route('login') }}" class="text-blue-500">logged in</a> to add a comment.</p>
+    @endauth
 
+    <div class="pt-10">
+        @if($post->comments->isEmpty())
+            <p class="text-gray-600">No comments yet.</p>
+        @else
+            @foreach($post->comments as $comment)
+                <div class="border-b border-gray-200 py-4">
+                    <p class="text-gray-800">{{ $comment->user->name }} said:</p>
+                    <p class="text-gray-600">{{ $comment->content }}</p>
+                    <p class="text-gray-400 text-sm">{{ date('jS M Y', strtotime($comment->created_at)) }}</p>
+                </div>
+            @endforeach
+        @endif
+    </div>
+</div>
 
-@endsection 
+@endsection

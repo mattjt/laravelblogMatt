@@ -5,15 +5,21 @@ use Illuminate\Support\Facades\Schema;
 
 class AddColumnsToContactSubmissionsTable extends Migration
 {
+    /**
+     * Run the migrations.
+     *
+     * @return void
+     */
     public function up()
     {
-        Schema::table('contact_submissions', function (Blueprint $table) {
-            $table->string('name')->after('id');
-            $table->string('email')->after('name');
-            $table->text('message')->after('email');
-        });
+        // No need to add columns that already exist
     }
 
+    /**
+     * Reverse the migrations.
+     *
+     * @return void
+     */
     public function down()
     {
         Schema::table('contact_submissions', function (Blueprint $table) {
