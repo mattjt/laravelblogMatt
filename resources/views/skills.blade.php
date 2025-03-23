@@ -30,7 +30,7 @@
             <div class="text-center">
                 <h2 class="text-3xl font-extrabold text-gray-600">{{ $gem['name'] }}</h2>
                 <p class="py-8 text-gray-500 text-s italic">{{ $gem['description'] }}</p>
-                <img src="/images/{{ $gem['image'] }}"  alt="{{ $gem['name'] }}" class="max-height-500">
+                <img src="/images/{{ $gem['image'] }}"  alt="{{ $gem['name'] }}" class="max-height-500 rounded-lg shadow-2xl ">    
             </div>
         @endforeach
     </div>
