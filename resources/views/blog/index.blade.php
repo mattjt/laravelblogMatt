@@ -53,7 +53,7 @@
                 Keep Reading
             </a>
             
-            @if (isset(Auth::user()->id) && Auth::user()->id == $post->user_id)
+            @if (isset(Auth::user()->id) && Auth::user()->id == $post->user_id && Auth::user()->is_admin)
                 <span class="float-right">
                     <a 
                         href="/blog/{{ $post->slug }}/edit"

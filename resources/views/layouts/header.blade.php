@@ -29,6 +29,10 @@
             @else
                 <span class="no-underline px-2 flex items-center h-full">{{ Auth::user()->name }}</span>
                 <span class="border-r border-gray-100 h-full"></span>
+                @can('view-admin-page')
+                    <a class="no-underline px-2 flex items-center h-full" href="{{ route('admin.contact.index') }}">Admin</a>
+                    <span class="border-r border-gray-100 h-full"></span>
+                @endcan
                 <a href="{{ route('logout') }}"
                    class="no-underline px-2 flex items-center h-full"
                    onclick="event.preventDefault();

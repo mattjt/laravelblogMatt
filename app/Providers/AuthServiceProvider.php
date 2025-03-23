@@ -6,6 +6,8 @@ use Illuminate\Foundation\Support\Providers\AuthServiceProvider as ServiceProvid
 use Illuminate\Support\Facades\Gate;
 use App\Models\Comment;
 use App\Policies\CommentPolicy;
+use App\Models\ContactFormSubmission;
+use App\Policies\ContactFormSubmissionPolicy;
 
 class AuthServiceProvider extends ServiceProvider
 {
@@ -17,6 +19,7 @@ class AuthServiceProvider extends ServiceProvider
     protected $policies = [
         // 'App\Models\Model' => 'App\Policies\ModelPolicy',
         Comment::class => CommentPolicy::class,
+        ContactFormSubmission::class => ContactFormSubmissionPolicy::class,
     ];
 
     /**
@@ -28,6 +31,7 @@ class AuthServiceProvider extends ServiceProvider
     {
         $this->registerPolicies();
 
-        //
+        // Ensure the gate is defined
+        Gate::define('view-admin-page', [ContactFormSubmissionPolicy::class, 'viewAdminPage']);
     }
 }
