@@ -40,9 +40,9 @@ DB_USERNAME={USERNAME}
 DB_PASSWORD={PASSWORD}
 ```
 
-Migrate the tables
+Refresh the database migrations (this will drop all existing tables and re-run all migrations)
 ```
-php artisan migrate
+php artisan migrate:fresh
 ```
 
 ## Contributing
