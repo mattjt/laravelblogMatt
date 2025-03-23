@@ -13,6 +13,7 @@ Setting up your development environment on your local machine: <br>
 git clone https://github.com/mattjt/laravelblogMatt.git
 
 composer install
+composer update
 
 php artisan cache:clear 
 php artisan config:clear
@@ -40,6 +41,11 @@ DB_PASSWORD=
 Refresh the database migrations (this will drop all existing tables and re-run all migrations)
 ```
 php artisan migrate:fresh
+```
+
+```
+Create a user in register
+Edit access level to 1 in phpmyadmin in users so see admin features
 ```
 
 
