@@ -13,7 +13,7 @@
 
     <div class="sm:grid grid-cols-2 gap-20 w-4/5 mx-auto py-15 border-b border-gray-200">
         <div>
-            <img src="/images/classes.jpeg" width="700" alt="" class="max-height-300">
+            <img src="/images/classes.jpeg" width="700" alt="" class="max-height-300 rounded-lg shadow-2xl">
         </div>
 
         <div class="m-auto sm:m-auto text-left w-4/5 block">
@@ -61,13 +61,13 @@
         </div>
 
         <div>
-            <img src="/images/skilltree1.png" width="700" alt="" class="max-height-300">
+            <img src="/images/skilltree1.png" width="700" alt="" class="max-height-300 rounded-lg shadow-2xl">
         </div>
     </div>
 
     <div class="sm:grid grid-cols-2 gap-20 w-4/5 mx-auto py-15 border-b border-gray-200">
         <div>
-            <img src="/images/skillgem.avif" width="700" alt="" class="max-height-300">
+            <img src="/images/skillgem.avif" width="700" alt="" class="max-height-300 rounded-lg shadow-2xl">
         </div>
 
         <div class="m-auto sm:m-auto text-left w-4/5 block">

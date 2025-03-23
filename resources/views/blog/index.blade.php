@@ -33,7 +33,7 @@
 @foreach ($posts as $post)
     <div class="sm:grid grid-cols-2 gap-20 w-4/5 mx-auto py-15 border-b border-gray-700">
         <div>
-            <img src="{{ asset('images/' . $post->image_path) }}" alt="" >
+            <img src="{{ asset('images/' . $post->image_path) }}" alt="" class="rounded-lg shadow-2xl" >
         </div>
         <div class="overflow-hidden max-h-80">
             <h2 class="text-gray-900 font-bold text-5xl pb-4">
