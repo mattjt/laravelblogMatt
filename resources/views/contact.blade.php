@@ -43,5 +43,10 @@
         <p class="w-3/5 m-auto text-lg mt-4">
             Email: mattjpt@gmail.com | Phone: +123 456 7890 | Address: 123 dundalk, louth, Ireland
         </p>
+        @can('view-admin-page')
+            <p class="w-3/5 m-auto text-lg mt-4">
+                <a href="{{ route('admin.contact.index') }}" class="text-blue-500 underline">View Contact Form Submissions</a>
+            </p>
+        @endcan
     </div>
 @endsection
