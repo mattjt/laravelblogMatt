@@ -36,6 +36,8 @@ Route::post('/comments', [CommentController::class, 'store'])->middleware('auth'
 
 Route::delete('/comments/{comment}', [CommentController::class, 'destroy'])->name('comments.destroy');
 
+Route::delete('/contact/{id}', [ContactController::class, 'destroy'])->name('contact.destroy');
+
 Route::get('/skilltree', [PagesController::class, 'skilltree'])->name('skilltree');
 
 Route::get('/skills', [PagesController::class, 'skills'])->name('skills');

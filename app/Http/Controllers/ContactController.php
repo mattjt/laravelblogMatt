@@ -24,4 +24,12 @@ class ContactController extends Controller
         $users = User::all();
         return view('admin.contact.index', compact('submissions', 'users'));
     }
+
+    public function destroy($id)
+    {
+        $contact = ContactSubmission::findOrFail($id);
+        $contact->delete();
+
+        return redirect()->route('admin.contact.index')->with('message', 'Contact deleted successfully');
+    }
 }
