@@ -19,7 +19,7 @@
             <p class="text-gray-800 text-lg py-4">
                 Have a question? Fill out the form below or reach us via email and phone.
             </p>
-            <form action="/contact" method="POST" class="bg-white p-6 rounded-lg shadow-md">
+            <form action="{{ route('contact.submit') }}" method="POST" class="bg-white p-6 rounded-lg shadow-md">
                 @csrf
                 <div class="mb-4">
                     <label class="block text-gray-700 text-sm font-bold mb-2">Name</label>

@@ -3,6 +3,7 @@
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\PagesController;
 use App\Http\Controllers\PostsController;
+use App\Http\Controllers\ContactController;
 
 /*
 |--------------------------------------------------------------------------
@@ -23,13 +24,14 @@ Auth::routes();
 
 Route::get('/home', [\App\Http\Controllers\HomeController::class, 'index'])->name('home');
 
-Auth::routes();
-
-Route::get('/home', [\App\Http\Controllers\HomeController::class, 'index'])->name('home');
+// Remove duplicate Auth::routes() and home route
+// Auth::routes();
+// Route::get('/home', [\App\Http\Controllers\HomeController::class, 'index'])->name('home');
 
 Route::get('/about', [PagesController::class, 'about'])->name('about');
 
 Route::get('/contact', [PagesController::class, 'contact'])->name('contact');
+Route::post('/contact', [ContactController::class, 'submit'])->name('contact.submit');
 
 Route::get('/skilltree', [PagesController::class, 'skilltree'])->name('skilltree');
 Route::get('/skills', [PagesController::class, 'skills'])->name('skills');
