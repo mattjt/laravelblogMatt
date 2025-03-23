@@ -27,7 +27,7 @@
     <p class="text-xl text-gray-700 pt-8 pb-10 leading-8 font-light">
         {{ $post->furthertext }}
     </p>
-    <a href="/blog" class="uppercase bg-red-500 text-gray-100 text-lg font-extrabold py-4 px-8 rounded-3xl">
+    <a href="/blog" class="uppercase bg-red-500 text-gray-100 text-lg font-extrabold py-4 px-8 rounded-3xl hover:bg-red-700 transition">
         Back
     </a>
 </div>
@@ -39,7 +39,7 @@
         @csrf
         <input type="hidden" name="post_id" value="{{ $post->id }}">
         <textarea name="comment" rows="2" class="w-full rounded-lg shadow-lg p-4" placeholder="Add a comment"></textarea>
-        <button type="submit" class="mt-4 bg-green-500 text-gray-100 text-lg font-extrabold py-2 px-4 rounded-3xl">
+        <button type="submit" class="mt-4 bg-green-500 text-gray-100 text-lg font-extrabold py-2 px-4 rounded-3xl hover:bg-green-700 transition">
             Submit
         </button>
     </form>

@@ -31,7 +31,7 @@
 
             <a 
                 href="/classes"
-                class="uppercase bg-red-500 text-gray-100 text-s font-extrabold py-3 px-6 rounded-2xl">
+                class="uppercase bg-red-500 text-gray-100 text-s font-extrabold py-3 px-6 rounded-2xl hover:bg-red-700 transition">
                 Classes Page
             </a>
         </div>
@@ -55,7 +55,7 @@
 
             <a 
                 href="/skilltree"
-                class="uppercase bg-red-500 text-gray-100 text-s font-extrabold py-3 px-6 rounded-2xl">
+                class="uppercase bg-red-500 text-gray-100 text-s font-extrabold py-3 px-6 rounded-2xl hover:bg-red-700 transition">
                 Skill Tree Page
             </a>
         </div>
@@ -85,7 +85,7 @@
 
             <a 
                 href="/skills"
-                class="uppercase bg-red-500 text-gray-100 text-s font-extrabold py-3 px-6 rounded-2xl">
+                class="uppercase bg-red-500 text-gray-100 text-s font-extrabold py-3 px-6 rounded-2xl hover:bg-red-700 transition">
                 Skill Gem Page
             </a>
         </div>
